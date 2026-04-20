@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/andreiradu2102/ci_cd_lab:latest
+          image: ghcr.io/andreiradu2102/ci_cd_lab:does-not-exist
           ports:
             - containerPort: 8080
