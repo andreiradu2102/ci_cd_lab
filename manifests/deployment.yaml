@@ -16,6 +16,13 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/andreiradu2102/ci_cd_lab:does-not-exist
+          image: ghcr.io/andreiradu2102/ci_cd_lab:latest
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
